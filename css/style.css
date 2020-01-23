@@ -1,0 +1,57 @@
+/*Import fonts from fonts.css*/
+@import url(./fonts.css);
+
+/*Navigation*/
+.header_area .main-menu .fas.fa-briefcase.fa-2x{
+    background: -webkit-linear-gradient(#614385,#516395);
+    padding: 0 10rem 0 10rem;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.header_area .main-menu .nav-item .nav-link{
+    font-family: "Roboto",sans-serif;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 1.7rem;
+    color:black;
+}
+
+.header_area .main-menu .navbar-nav .active a{
+    background: -webkit-linear-gradient(#614385,#516395);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+} 
+
+.header_area .main-menu .navbar-nav a:hover{
+    background: -webkit-linear-gradient(#614385,#516395);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+} 
+
+/*End Navigation*/
+
+
+/*Start introduction*/
+
+.site-main .site-banner .container .row .col-lg-6.col-md-12 h3{
+    padding-top: 5rem;
+    font-weight: 500;
+    
+}
+/*End introduction*/
+
+
+
+@media only screen and (max-width: 600px) {
+    .header_area .main-menu .fas.fa-briefcase.fa-2x{
+        background: -webkit-linear-gradient(#614385,#516395);
+        padding: 0 1rem 0 1rem;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+    }
+  }
