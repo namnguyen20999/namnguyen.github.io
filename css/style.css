@@ -70,7 +70,19 @@
 } 
 /*End introduction*/
 
+/* About Me*/
 
+.profileImage{
+    float: none;
+    text-align: center;
+    margin-top: 2rem;
+}
+.about-main .container-fluid .row .text-uppercase{
+    margin-top: 2.5rem;
+}
+
+
+/* End About Me*/
 
 @media only screen and (max-width: 600px) {
     .header_area .main-menu .fas.fa-briefcase.fa-2x{
