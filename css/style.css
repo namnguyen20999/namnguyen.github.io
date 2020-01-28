@@ -85,6 +85,23 @@
 /* End About Me*/
 
 @media only screen and (max-width: 600px) {
+    /*Text title*/
+    .site-main .site-banner .col-lg-6.col-md-12 h3{
+        text-align: center;
+    }
+    .site-main .site-banner .col-lg-6.col-md-12 h1{
+        text-align: center;
+        font-size: 25px;
+        font-weight: bolder;
+    }
+    .site-main .site-banner .col-lg-6.col-md-12 h4{
+        text-align: center;
+    }
+    .site-main .site-banner .col-lg-6.col-md-12 .main-buttons .d-flex.flex-row #buttonResume{
+        margin: auto;
+        margin-top: 1rem;
+    }
+    /*Body*/
     .header_area .main-menu .fas.fa-briefcase.fa-2x{
         background: -webkit-linear-gradient(#614385,#516395);
         padding: 0 1rem 0 1rem;
@@ -94,5 +111,11 @@
     }
     .col-lg-6.col-md-12.banner .text-center img{
         margin-top: 3rem;
+    }
+    #Introduction{
+        font-size: 25px;
+        font-family: "Roboto", sans-serif;
+        text-align: center;
+        margin-top: 2rem;
     }
 }
