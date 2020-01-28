@@ -37,8 +37,9 @@
 
 /*Start introduction*/
 
+
 .site-main .site-banner .container .row .col-lg-6.col-md-12 h3{
-    padding-top: 5rem;
+    padding-top: 3rem;
     font-weight: 500;
     
 }
@@ -75,16 +76,45 @@
 .profileImage{
     float: none;
     text-align: center;
-    margin-top: 2rem;
+    margin-top: 1rem;
 }
 .about-main .container-fluid .row .text-uppercase{
     margin-top: 2.5rem;
 }
+.site-main span{
+    color: #516395;
+}
 
+.about-main .container-fluid .row h2{
+    font-family: "Roboto", sans-serif;
+    font-size: 46px;
+    margin-left: 0;
+}
+.about-main .container-fluid .row h2::after,
+.about-main .container-fluid .row h2::before{
+    content: "";
+    height: 3px;
+    width: 10vw;
+    background: black;
+    display: inline-block;
+    transform: translateY(-10px);
+    margin: 0px 5px 0px 5px;
+}
+
+#AboutMe{
+    font-size: 17px;
+    font-weight: 500;
+}
+
+#country{
+    color: rgb(255, 77, 77);
+}
 
 /* End About Me*/
 
 @media only screen and (max-width: 600px) {
+    
+    
     /*Text title*/
     .site-main .site-banner .col-lg-6.col-md-12 h3{
         text-align: center;
@@ -101,6 +131,10 @@
         margin: auto;
         margin-top: 1rem;
     }
+    
+    
+    /*Introduction*/
+    
     /*Body*/
     .header_area .main-menu .fas.fa-briefcase.fa-2x{
         background: -webkit-linear-gradient(#614385,#516395);
@@ -112,10 +146,11 @@
     .col-lg-6.col-md-12.banner .text-center img{
         margin-top: 3rem;
     }
-    #Introduction{
+    .about-main .container-fluid .row h2{
         font-size: 25px;
         font-family: "Roboto", sans-serif;
         text-align: center;
+        margin: auto;
         margin-top: 2rem;
     }
 }
