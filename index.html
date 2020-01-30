@@ -53,25 +53,20 @@
     <!-------------------- Start Main Area -------------------->
     <main class="site-main">
         <section class="site-banner">
-            <div class="container">
+            <div class="container-fluid">
                 <div class="row">
                     <div class="col-lg-6 col-md-12">
-                        <h3 class="text-title">Hello Everyone</h3>
-                        <h1 class="text-title">I'm <span class="animated bounceInLeft">Nam Nguyen</span>.</h1>
-                        <h4 class="text-title text-uppercase">Full-stack Developer</h4>
-                        <h4 class="text-title text-uppercase">Software Developer</h4>
-                        <div class="main-buttons">
-                            <div class="d-flex flex-row">
-                                <button id="buttonResume" type="button" class="btn btn-light text-uppercase">Get Résumé</button>
-                            </div>   
-                        </div>         
+                        <h1 class="text-title text-center">Hello,</h1>
+                        <h1 class="text-title text-center">I am <span class="animated bounceInLeft">Nam Nguyen</span>.</h1>
+                        <h4 class="text-title text-uppercase text-center">Full-stack Developer</h4>
+                        <h4 class="text-title text-uppercase text-center">Software Developer</h4>        
                     </div>
                     <div class="col-lg-6 col-md-12 banner">
                         <!--"Icon made by Smashicons perfect from www.flaticon.com"-->
                         <!--"Icon made by monkik from www.flaticon.com"-->
                         <!--"Icon made by itim2101 from www.flaticon.com"-->
                         <div class="text-center">
-                        <img src="./img/coding_img.png" class="img-fluid mx-auto" alt="background">
+                        <img src="./img/coding_img.png" class="img-fluid" alt="background">
                         </div>
                     </div>
                 </div>
@@ -86,57 +81,84 @@
             <div class="row">
               <div class="col-lg-6 col-md-12 profileImage">
                   <img src="./img/profile_img.png" alt="profilePhoto" class="img-fluid">
+                  <div class="main-buttons">
+                        <button id="buttonResume" type="button" class="btn btn-light text-uppercase">Get Résumé</button>   
+                </div> 
               </div>
               <div class="col-lg-6 col-md-12">
                 <h2 class="animated bounceInLeft delay-1s">About Me</h2>
-                <p id="AboutMe" class="animated bounceInLeft delay-2s">
-                  I was born in <span id="country">Vietnam</span><span>&#x1F61C</span>,<br> a place is known as the S-shaped country located in Southeast Asia with many natural wonders and heritage sites.<br>                 
-                  I have moved to Canada<span>&#x1F341</span>recent year to pursuit my education in Computer Engineering<span>🖥️</span>at <a href="https://humber.ca/">Humber College</a> and in that time,
-                  I quickly realized that I have a passion<span>🧡</span> for building UI/UX as well as creating a strong back-end database websites.<br>
-                  My focus is creating a clean, user-friendly, and accessible websites that look great on all devices.<br>
+                <p id="AboutMe" class="animated bounceInLeft delay-1s">                 
+                  💻 Curently a senior in the computer engineering program at <a href="https://humber.ca/">Humber College</a>.<br><br> 
+                  💻 Recieved standard education in full-stack website developement.<br><br>
+                  💻 I soon realized that i have a strong passion for building UI/UX and visual developmnent.<br><br>
+                  💻 Strong desire in creating clean, user-friendly and accessible websites with originality and compatible on all platform.<br><br>
+                  💻 Looking for oppotunities for entry-level possitions in the industry to enchance my sklills and push my career path futher.
                 </br>
               </div>
             </div>
           </div>
         </section>
   
-        <!-------------------------------------------------------->
+        <!-------------------- End About Area --------------------->
+
+        <!----------------  About Project  ----------------------->
+        
         <section class="About-project">
           <div class="container-fluid">
-            <div class="row">
-              <div class="col-lg-3 col-md-6">
-                <div class="text-center">
+            <div class="row text-center">
+              <div class="col-lg-3 col-md-6 waypoint animated bounceInLeft delay-4s" id="waypoint!">
+                <div class="hex-wrap">
                   <div class="hexagon">
-                    <i class="fas fa-tachometer-alt fa-2x text-center"></i>
+                    <img src="./img/speed.png" alt="speed" id="speed">
                   </div>
                 </div>
+                <h3>Fast</h3>
+                <p id="citation">Fast load times and lag free, my highest priority</p>
               </div>
-              <div class="col-lg-3 col-md-6">
-                <div class="text-center">
+              <div class="col-lg-3 col-md-6 waypoint animated bounceInLeft delay-3s" id="waypoint!">
+                <div class="hex-wrap">
                   <div class="hexagon">
-                    <i class="fas fa-tachometer-alt fa-2x"></i>
+                    <img src="./img/idea.png" alt="idea" id="idea">
                   </div>
                 </div>
+                <h3>Inherent</h3>
+                <p id="citation">Strong preference to use</p>
               </div>
-              <div class="col-lg-3 col-md-6">
-                <div class="text-center">
+              <div class="col-lg-3 col-md-6 waypoint animated bounceInLeft delay-2s" id="waypoint!">
+                <div class="hex-wrap">
                   <div class="hexagon">
-                    <i class="fas fa-tachometer-alt fa-2x"></i>
+                    <img src="./img/laptop.png" alt="laptop" id="laptop">
                   </div>
                 </div>
+                <h3 id="Responsive">Responsive</h3>
+                <p id="citation">Easy to load on any devices without any errors</p>
               </div>
-              <div class="col-lg-3 col-md-6">
-                <div class="text-center">
+              <div class="col-lg-3 col-md-6 waypoint animated bounceInLeft delay-1s" id="waypoint!">
+                <div class="hex-wrap">
                   <div class="hexagon">
-                    <i class="fas fa-tachometer-alt fa-2x"></i>
+                    <img src="./img/rocket.png" alt="rocket" id="rocket">
                   </div>
                 </div>
+                <h3>Dynamic</h3>
+                <p id="citation">Contains dynamic pages such as templates, contents, script etc</p>
               </div>
             </div>
           </div>
         </section>
-        <!------------------------------------>
+        <!--------------- End About Project  --------------------->
 
+        <section class="Project">
+          <div class="container">
+            <div class="project-tile pb-5">
+              <h1 class="text-uppercase title-h1">Recently Done Project</h1>
+              <h1 class="text-uppercase title-h1">Quality work</h1>
+            </div>
+            <div class="button-group">
+              <button type="button" class="active">All</button>
+              <button type="button">Upcoming</button>
+            </div>
+          </div>
+        </section>
 
     <!-------------------- End Main Area -------------------->
 
@@ -144,5 +166,9 @@
     <script src="./js/jquery.3.4.1.js"></script>
     <!-- Bootstrap javascript file-->
     <script src="./js/bootstrap.min.js"></script>
+    <!-- Waypoint Javascript file -->
+    <script src="./js/jquery.waypoints.min.js"></script>
+    <!-- Javascript file -->
+    <script src="./js/javascript.js"></script>
 </body>
 </html>

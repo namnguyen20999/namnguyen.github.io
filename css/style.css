@@ -4,7 +4,7 @@
 /*Navigation*/
 .header_area .main-menu .fas.fa-briefcase.fa-2x{
     background: -webkit-linear-gradient(#614385,#516395);
-    padding: 0 10rem 0 10rem;
+    padding: 0 5rem 0 5rem;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -37,7 +37,6 @@
 
 /*Start introduction*/
 
-
 .site-main .site-banner .container .row .col-lg-6.col-md-12 h3{
     padding-top: 3rem;
     font-weight: 500;
@@ -50,18 +49,18 @@
     border-radius: 4px;
     position: relative;
     font-weight: bold;
-    margin-left: 5rem;
 }
 
-.site-main .site-banner .container .row .col-lg-6.col-md-12 .main-buttons button{
+.about-main .container-fluid .row .col-lg-6.col-md-12.profileImage button{
     background: -webkit-linear-gradient(#614385,#516395);
     color: white;
     box-shadow:5px 10px 18px #614385;
+    text-align: center;
 } 
 
-.site-main .site-banner .container .row .col-lg-6.col-md-12 .main-buttons button:hover{
-    background: whitesmoke;
-    color: black;
+.about-main .container-fluid .row .col-lg-6.col-md-12.profileImage button:hover{
+    background: #614385;
+    color: white;
     background-clip: border-box;
     -webkit-transition:  1s ease-out;
     -moz-transition:  1s ease-out;
@@ -77,7 +76,9 @@
     float: none;
     text-align: center;
     margin-top: 1rem;
+    padding-left: 1rem;
 }
+
 .about-main .container-fluid .row .text-uppercase{
     margin-top: 2.5rem;
 }
@@ -90,11 +91,11 @@
     font-size: 46px;
     margin-left: 0;
 }
-.about-main .container-fluid .row h2::after,
-.about-main .container-fluid .row h2::before{
+
+.about-main .container-fluid .row h2::after{
     content: "";
     height: 3px;
-    width: 10vw;
+    width: 60%;
     background: black;
     display: inline-block;
     transform: translateY(-10px);
@@ -113,55 +114,60 @@
 /* End About Me*/
 
 /* About Project*/
-.hexagon {
-    width: 100px;
-    height: 55px;
-    background: -webkit-linear-gradient(#614385,#516395);
+.hex-wrap {
+    margin-top: 5rem;
+    display: inline-block;
+    height: 100px;
     position: relative;
-    margin-top: 4rem;
     text-align: center;
+    width: 100px;
+}
+
+.hexagon {
+    background: -webkit-linear-gradient(#614385,#516395);
+    display: inline-block;
+    height: 100%;
+    width: calc(100% * 0.57735);
 }
 
 .hexagon:before {
+    background: -webkit-linear-gradient(#614385,#516395);
     content: "";
+    height: inherit;
     position: absolute;
-    top: -25px;
-    left: 0;
-    width: 0;
-    height: 0;
-    border-left: 50px solid transparent;
-    border-right: 50px solid transparent;
-    border-bottom: 25px solid  #614385;
+    right: calc((100% / 2) - ((100% * 0.57735) / 2));
+    top: 0;
+    transform: rotateZ(60deg);
+    width: inherit;
 }
 
 .hexagon:after {
+    background: -webkit-linear-gradient(#614385,#516395);
     content: "";
+    height: inherit;
     position: absolute;
-    bottom: -25px;
-    left: 0;
-    width: 0;
-    height: 0;
-    border-left: 50px solid transparent;
-    border-right: 50px solid transparent;
-    border-top: 25px solid  #516395;
+    right: calc((100% / 2) - ((100% * 0.57735) / 2));
+    top: 0;
+    transform: rotateZ(-60deg);
+    width: inherit;
 }
 
-
-.fas.fa-tachometer-alt.fa-2x{
-    vertical-align: middle;
+#rocket,
+#speed,
+#laptop,
+#idea{
+    font-size: 40px;
+    left: 20px;
     position: absolute;
+    right: 20px;
+    top: 25px;
+    z-index: 1;
 }
 
-
-#first{
-    margin:auto
+#citation{
+    font-size: large;
+    font-weight: 500;
 }
-
-
-
-
-
-
 @media only screen and (max-width: 600px) {
     
     
@@ -203,4 +209,26 @@
         margin: auto;
         margin-top: 2rem;
     }
+
+    /* About Me*/
+.about-main .container-fluid .row h2::after,
+.about-main .container-fluid .row h2::before{
+    content: "";
+    height: 3px;
+    width: 25%;
+    background: black;
+    display: inline-block;
+    transform: translateY(-7px);
+    margin: 0px 10px 0px 10px;
+}
+
+    /* About Project*/
+.hex-wrap {
+    margin-top: 5rem;
+    display: inline-block;
+    height: 100px;
+    position: relative;
+    text-align: center;
+    width: 100px;
+}
 }
