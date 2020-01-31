@@ -18,16 +18,22 @@
 </head>
 <body>
     
-    <!-------------------- Start Header Area -------------------->
-
-    <header class="header_area">
+    
+  
+  
+  
+  
+  
+  <!-------------------- Start Header Area -------------------->
+    <header class="headroom header--fixed">
+      <div class="header_area">  
         <div class="main-menu">
-            <nav class="navbar navbar-expand-lg navbar-light headroom">
-                <a class="navbar-brand" href="#"><i class="fas fa-briefcase fa-2x"></i></a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                  <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
+              <nav class="navbar navbar-expand-lg navbar-light">
+                  <a class="navbar-brand" href="#"><i class="fas fa-briefcase fa-2x"></i></a>
+                  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarNav">
                   <div class="mr-auto"></div>
                     <ul class="navbar-nav">
                     <li class="nav-item active">
@@ -46,10 +52,17 @@
                 </div>
               </nav>
         </div>
+      </div>
     </header>
 
     <!-------------------- End Header Area -------------------->
 
+    
+    
+    
+    
+    
+    
     <!-------------------- Start Main Area -------------------->
     <main class="site-main">
         <section class="site-banner">
@@ -73,9 +86,16 @@
             </div>
         </section>
     </main>
+    <!-------------------- End Main Area -------------------->
     
-        <!--------------------   About Area  -------------------->
-
+    
+    
+    
+    
+    
+    
+    
+    <!--------------------   About Area  -------------------->
         <section class="about-main">
           <div class="container-fluid">
             <div class="row">
@@ -86,8 +106,8 @@
                 </div> 
               </div>
               <div class="col-lg-6 col-md-12">
-                <h2 class="animated bounceInLeft delay-1s">About Me</h2>
-                <p id="AboutMe" class="animated bounceInLeft delay-1s">                 
+                <h2 class="animated bounceInLeft delay-50ms">About Me</h2>
+                <p id="AboutMe" class="animated bounceInLeft delay-50ms">                 
                   💻 Curently a senior in the computer engineering program at <a href="https://humber.ca/">Humber College</a>.<br><br> 
                   💻 Recieved standard education in full-stack website developement.<br><br>
                   💻 I soon realized that i have a strong passion for building UI/UX and visual developmnent.<br><br>
@@ -101,42 +121,51 @@
   
         <!-------------------- End About Area --------------------->
 
-        <!----------------  About Project  ----------------------->
         
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <!----------------  About Project  ----------------------->
         <section class="About-project">
           <div class="container-fluid">
             <div class="row text-center">
-              <div class="col-lg-3 col-md-6 waypoint animated bounceInLeft delay-4s data-animation data-delay" id="waypoint!">
+              <div class="col-lg-3 col-md-6 waypoint animated bounceInLeft delay-2s data-animation data-delay">
                 <div class="hex-wrap">
                   <div class="hexagon">
-                    <img src="./img/speed.png" alt="speed" id="speed">
+                    <img src="./img/speed_img.png" alt="speed" id="speed">
                   </div>
                 </div>
                 <h3>Fast</h3>
                 <p id="citation">Fast load times and lag free, my highest priority</p>
               </div>
-              <div class="col-lg-3 col-md-6 waypoint animated bounceInLeft delay-3s" id="one">
+              <div class="col-lg-3 col-md-6 waypoint animated bounceInLeft delay-1-5s">
                 <div class="hex-wrap">
                   <div class="hexagon">
-                    <img src="./img/idea.png" alt="idea" id="idea">
+                    <img src="./img/idea_img.png" alt="idea" id="idea">
                   </div>
                 </div>
                 <h3>Inherent</h3>
                 <p id="citation">Strong preference to use</p>
               </div>
-              <div class="col-lg-3 col-md-6 waypoint animated bounceInLeft delay-2s" id="waypoint!">
+              <div class="col-lg-3 col-md-6 waypoint animated bounceInLeft delay-1s">
                 <div class="hex-wrap">
                   <div class="hexagon">
-                    <img src="./img/laptop.png" alt="laptop" id="laptop">
+                    <img src="./img/laptop_img.png" alt="laptop" id="laptop">
                   </div>
                 </div>
                 <h3 id="Responsive">Responsive</h3>
                 <p id="citation">Easy to load on any devices without any errors</p>
               </div>
-              <div class="col-lg-3 col-md-6 waypoint animated bounceInLeft delay-1s" id="waypoint!">
+              <div class="col-lg-3 col-md-6 waypoint animated bounceInLeft delay-50ms">
                 <div class="hex-wrap">
                   <div class="hexagon">
-                    <img src="./img/rocket.png" alt="rocket" id="rocket">
+                    <img src="./img/rocket_img.png" alt="rocket" id="rocket">
                   </div>
                 </div>
                 <h3>Dynamic</h3>
@@ -145,30 +174,101 @@
             </div>
           </div>
         </section>
-        <!--------------- End About Project  --------------------->
+        <!--------------- End About Project  --------------->
 
+        
+        
+        
+        
+        
+        
+        <!---------- Start Project ----------->
         <section class="Project">
           <div class="container-fluid">
             <div class="project-tile pb-5">
-              <h1 class="text-uppercase title-h1">Recently Done Project</h1>
-              <h1 class="text-uppercase title-h1">Quality work</h1>
+              <h1 class="text-uppercase title-h1 text-center"><span style="font-size: 50px;">🛠️</span> Projects <span style="font-size: 50px;">🛠️</span></h1>
             </div>
             <div class="button-group">
-              <button type="button" class="active">All</button>
-              <button type="button">Upcoming</button>
+              <button type="button" class="active" data-filter="*" id="All">All</button>
+              <button type="button" data-filter=".Done">Recently Done</button>
+              <button type="button" data-filter=".Upcoming">Upcoming</button>
+            </div>
+            <div class="row grid">
+              <div class="col-lg-4 col-md-6 col-sm-12 element-item Upcoming *">
+                <div class="my-project">
+                  <div class="imgProject">
+                    <a href="https://github.com/namnguyen20999/SmartHome">
+                      <img src="./img/androidProject_img.png" alt="androidProject">
+                    </a>  
+                  </div>
+                  <div class="title py-4">
+                    <h4 class="text-uppercase">Smart-Home Application</h4>
+                    <p class="text-left">An android application which allows users to control all of the sensor installed inside their household</p>
+                    <h6 class="text-secondary">Build with</h6>
+                  </div>
+                  <img src="./img/applicationUsed01.png" alt="builtWith">
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-6 col-sm-12 element-item Done *">
+                <div class="my-project">
+                  <div class="imgProject">
+                    <a href="https://github.com/namnguyen20999/SmartHome">
+                      <img src="./img/GamingWebsite_img.PNG" alt="gameWebpage">
+                    </a>  
+                  </div>
+                  <div class="title py-4">
+                    <h4 class="text-uppercase">Gaming Website</h4>
+                    <h6 class="text-secondary">Build with HTML, CSS3, BOOTSTRAP, JAVASCRIPT</h6>
+                  </div>
+                  <img src="./img/applicationUsed02.png" alt="builtWith">
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-6 col-sm-12 element-item Done *">
+                <div class="my-project">
+                  <div class="imgProject">
+                    <a href="https://github.com/namnguyen20999/SmartHome"> 
+                      <img src="./img/weatherMapApi_img.png" alt="weatherMapApi">
+                    </a>   
+                  </div>
+                  <div class="title py-4">
+                    <h4 class="text-uppercase">Weather Forecast</h4>
+                    <h6 class="text-secondary">Build with</h6>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </section>
+        <!-------- End Project ------------>
 
-    <!-------------------- End Main Area -------------------->
 
-    <!-- Jquery js file-->
+
+
+
+        <!------------- Contact Area -------------->
+        <section class="About">
+          <div class="container-fluid">
+            <h1 class="text-center">Contact</h1>
+          </div>
+        </section>
+        <!--------- End Contact Area ------------>
+
+
+
+
+
+
+
+
+    <!-- Jquery Javascript file-->
     <script src="./js/jquery.3.4.1.js"></script>
     <!-- Bootstrap javascript file-->
     <script src="./js/bootstrap.min.js"></script>
     <!-- Waypoint Javascript file -->
-    <script src="./js/headroom.min.js"></script>
+    <script src="./js/headroom.js"></script>
     <!-- Javascript file -->
     <script src="./js/javascript.js"></script>
+    <!-- Isotope Javascript file-->
+    <script src="./js/isotope.pkgd.min.js"></script>
 </body>
 </html>

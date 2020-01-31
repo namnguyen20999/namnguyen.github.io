@@ -32,10 +32,33 @@
     background-clip: text;
 } 
 
+.headroom {
+    transition: transform .25s ease-in-out;
+    will-change: transform;
+}
+.headroom--pinned {
+    transform: translateY(0%);
+}
+.headroom--unpinned {
+    transform: translateY(-100%);
+}
+
+.header--fixed {
+    position: fixed;
+    z-index: 10;
+    right: 0;
+    left: 0;
+    top: 0;
+    background: white;
+}
+
 /*End Navigation*/
 
 
 /*Start introduction*/
+.site-main{
+    padding-top: 6rem;
+}
 
 .site-main .site-banner .container .row .col-lg-6.col-md-12 h3{
     padding-top: 3rem;
@@ -168,6 +191,42 @@
     font-size: large;
     font-weight: 500;
 }
+
+/*Project Area*/
+.Project .button-group button{
+    background: transparent;
+    border: none;
+    font-size: 18px;
+    font-weight: bolder;
+    margin: 0rem 2rem 2rem 0rem ;
+    font-family: 'Roboto', sans-serif;
+    text-transform: uppercase;
+}
+
+button:focus,
+button:active
+button:hover
+.btn:active{
+    outline: 0px !important;
+    box-shadow: none;
+}
+
+#androidProject{
+    border-radius: 15px;
+}
+
+.Project .imgProject{
+    margin-top: 2rem;
+}
+
+
+
+.Project .grid .imgProject a:hover img{
+    filter: brightness(0.95) drop-shadow(1px 8px 30px #FFFFFF);
+    transform: scale(0.9);
+    transition: transform .2s;
+}
+/*End Project Area*/
 @media only screen and (max-width: 600px) {
     
     
