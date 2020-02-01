@@ -23,5 +23,22 @@ $(".button-group button").click(function(){
     return false;
 });
 
+$(".tool").isotope({
+    layoutMode: "fitRows",
+    fitRows:{
+        gutter: 0
+    }
+});
+
+$(".button-group-tool button").click(function(){
+    $(".button-group-tool button").removeClass("active");
+    $(this).addClass("active");
+
+    var selector = $(this).attr("data-filter");
+    $(".tool").isotope({
+        filter: selector
+    });
+    return false;
+});
 });
 

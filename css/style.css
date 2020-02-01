@@ -2,6 +2,10 @@
 @import url(./fonts.css);
 
 /*Navigation*/
+body{
+    font-family: "Roboto", sans-serif;
+}
+
 .header_area .main-menu .fas.fa-briefcase.fa-2x{
     background: -webkit-linear-gradient(#614385,#516395);
     padding: 0 5rem 0 5rem;
@@ -55,6 +59,19 @@
 /*End Navigation*/
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*Start introduction*/
 .site-main{
     padding-top: 6rem;
@@ -93,8 +110,19 @@
 } 
 /*End introduction*/
 
-/* About Me*/
 
+
+
+
+
+
+
+
+
+
+
+
+/* About Me*/
 .profileImage{
     float: none;
     text-align: center;
@@ -135,6 +163,21 @@
 }
 
 /* End About Me*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* About Project*/
 .hex-wrap {
@@ -192,7 +235,48 @@
     font-weight: 500;
 }
 
+
+
+
+
+
+
+
+
 /*Project Area*/
+#projectHeaderBefore::before{
+    content: "";
+    height: 3px;
+    width: 30%;
+    background: black;
+    display: inline-block;
+    transform: translateY(-10px);
+    margin: 0px 5px 0px 5px;
+}
+
+#projectHeaderAfter::after{
+    content: "";
+    height: 3px;
+    width: 30%;
+    background: black;
+    display: inline-block;
+    transform: translateY(-10px);
+    margin: 0px 5px 0px 5px;
+}
+
+#projectHeader{
+    margin: 0 1rem 0 1rem;
+}
+
+.Project{
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+}
+
+#Project span{
+    font-size: 30px;
+}
+
 .Project .button-group button{
     background: transparent;
     border: none;
@@ -211,6 +295,12 @@ button:hover
     box-shadow: none;
 }
 
+.button-group .active{
+    background: -webkit-linear-gradient(#614385,#516395) !important;
+    color: white;
+    border-radius: 3px;
+}
+
 #androidProject{
     border-radius: 15px;
 }
@@ -219,14 +309,121 @@ button:hover
     margin-top: 2rem;
 }
 
-
-
 .Project .grid .imgProject a:hover img{
     filter: brightness(0.95) drop-shadow(1px 8px 30px #FFFFFF);
     transform: scale(0.9);
     transition: transform .2s;
 }
+
+.row.grid{
+    margin: 0rem 4rem 4rem 0rem ;
+}
 /*End Project Area*/
+
+
+
+
+
+
+
+
+
+
+
+
+/*Tool*/
+#skillsetHeaderAfter::after{
+    content: "";
+    height: 3px;
+    width: 30%;
+    background: black;
+    display: inline-block;
+    transform: translateY(-10px);
+    margin: 0px 5px 0px 5px;
+}
+
+#skillsetHeaderBefore::before{
+    content: "";
+    height: 3px;
+    width: 30%;
+    background: black;
+    display: inline-block;
+    transform: translateY(-10px);
+    margin: 0px 5px 0px 5px;
+}
+
+#skillsetHeader{
+    margin: 0 1rem 0 1rem;
+}
+
+#Tool span{
+    font-size: 30px;
+}
+
+.Tool #Tool{
+    margin-bottom: 4rem;
+}
+
+.Tool{
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+}
+
+.Tool .button-group-tool button{
+    background: transparent;
+    border: none;
+    font-size: 18px;
+    font-weight: bolder;
+    margin: 0rem 2rem 2rem 0rem ;
+    font-family: 'Roboto', sans-serif;
+    text-transform: uppercase;
+}
+
+.button-group-tool .active{
+    background: -webkit-linear-gradient(#614385,#516395) !important;
+    color: white;
+    border-radius: 3px;
+}
+
+.row.Tool{
+    margin: 0rem 4rem 4rem 0rem ;
+}
+/*End Tool*/
+
+
+
+
+
+
+
+
+
+/*Contact*/
+.Contact{
+    margin-top: 5rem;
+    background-color: #FBFBFB;
+}
+
+#Linkedin{
+    color: #0e76a8;
+    margin: 1rem;
+}
+
+#Facebook{
+    color: #3b5998;
+    margin: 1rem;
+}
+
+#Github{
+    color: #000000;
+    margin: 1rem;
+}
+
+#Email{
+    color: #C0403F;
+    margin: 1rem;
+}
+/*End Contact*/
 @media only screen and (max-width: 600px) {
     
     
@@ -282,7 +479,13 @@ button:hover
 }
 
     /* About Project*/
-.hex-wrap {
+.Project .container-fluid h1{
+    font-size: 25px;
+    text-transform: uppercase;
+    font-weight: bolder;
+}
+
+    .hex-wrap {
     margin-top: 5rem;
     display: inline-block;
     height: 100px;
@@ -290,4 +493,72 @@ button:hover
     text-align: center;
     width: 100px;
 }
+
+/*Project*/
+#projectHeader{
+    margin: auto;
+}
+
+#projectHeaderBefore::before{
+    content: "";
+    height: 3px;
+    width: 10%;
+    background: black;
+    display: inline-block;
+    transform: translateY(-8px);
+    margin: 0px 5px 0px 5px;
+}
+
+#projectHeaderAfter::after{
+    content: "";
+    height: 3px;
+    width: 10%;
+    background: black;
+    display: inline-block;
+    transform: translateY(-8px);
+    margin: 0px 5px 0px 5px;
+}
+.Project #projectHeader,
+.Project #projectHeaderBefore,
+.Project #projectHeaderAfter{
+    font-size: 20px;
+    font-weight: bolder;
+}
+/*Skill set*/
+#skillsetHeader{
+    margin: auto;
+}
+
+#skillsetHeaderAfter::after{
+    content: "";
+    height: 3px;
+    width: 10%;
+    background: black;
+    display: inline-block;
+    transform: translateY(-8px);
+    margin: 0px 5px 0px 5px;
+}
+
+#skillsetHeaderBefore::before{
+    content: "";
+    height: 3px;
+    width: 10%;
+    background: black;
+    display: inline-block;
+    transform: translateY(-8px);
+    margin: 0px 5px 0px 5px;
+}
+.Tool #skillsetHeader,
+.Tool #skillsetHeaderBefore,
+.Tool #skillsetHeaderAfter{
+    font-size: 20px;
+    font-weight: bolder;
+}
+/* Tool Used*/
+.Tool .container-fluid h1{
+    font-size: 25px;
+    text-transform: uppercase;
+    font-weight: bolder;
+}
+
 }
