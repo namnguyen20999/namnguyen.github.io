@@ -5,12 +5,10 @@ var headroom  = new Headroom(myElement);
 // initialise
 headroom.init();
 
-$(".grid").isotope({
-    itemSelector: '.my-project',
-    layoutMode: "fitRows",
-    fitRows:{
-        gutter:0;
-    }
+var $container = $('.grid');
+
+var $items = $($container).isotope({
+    itemSelector: '.projectIso'
 });
 
 $(".button-group button").click(function(){
