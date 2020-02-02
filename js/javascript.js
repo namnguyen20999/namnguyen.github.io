@@ -8,7 +8,8 @@ headroom.init();
 var $container = $('.grid');
 
 var $items = $($container).isotope({
-    itemSelector: '.projectIso'
+    itemSelector: '.projectIso',
+    layoutMode: 'masonry'
 });
 
 $(".button-group button").click(function(){
@@ -16,7 +17,7 @@ $(".button-group button").click(function(){
     $(this).addClass("active");
 
     var selector = $(this).attr("data-filter");
-    $(".grid").isotope({
+    $container.isotope({
         filter: selector
     });
     return false;
