@@ -5,12 +5,8 @@ var headroom  = new Headroom(myElement);
 // initialise
 headroom.init();
 
+//Create filtering
 var $container = $('.grid');
-
-var $items = $($container).isotope({
-    itemSelector: '.projectIso',
-    layoutMode: 'masonry'
-});
 
 $(".button-group button").click(function(){
     $(".button-group button").removeClass("active");
@@ -21,13 +17,6 @@ $(".button-group button").click(function(){
         filter: selector
     });
     return false;
-});
-
-$(".tool").isotope({
-    layoutMode: "fitRows",
-    fitRows:{
-        gutter: 10
-    }
 });
 
 $(".button-group-tool button").click(function(){

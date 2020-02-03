@@ -1,9 +1,12 @@
 /*Import fonts from fonts.css*/
 @import url(./fonts.css);
-
+html {
+    scroll-behavior: smooth;
+}
 /*Navigation*/
 body{
     font-family: "Roboto", sans-serif;
+    background-color: #F9F9F9;
 }
 
 .header_area .main-menu .fas.fa-briefcase.fa-2x{
@@ -57,15 +60,6 @@ body{
 }
 
 /*End Navigation*/
-
-
-
-
-
-
-
-
-
 
 
 
@@ -244,23 +238,28 @@ body{
 
 
 /*Project Area*/
+#Project{
+    margin-top: 10rem;
+    margin-bottom: 4rem;
+}
+
 #projectHeaderBefore::before{
     content: "";
-    height: 3px;
-    width: 30%;
+    height: 6px;
+    width: 20%;
     background: black;
     display: inline-block;
-    transform: translateY(-10px);
+    transform: translateY(-8px);
     margin: 0px 5px 0px 5px;
 }
 
 #projectHeaderAfter::after{
     content: "";
-    height: 3px;
-    width: 30%;
+    height: 6px;
+    width: 20%;
     background: black;
     display: inline-block;
-    transform: translateY(-10px);
+    transform: translateY(-8px);
     margin: 0px 5px 0px 5px;
 }
 
@@ -334,21 +333,21 @@ button:hover
 /*Tool*/
 #skillsetHeaderAfter::after{
     content: "";
-    height: 3px;
-    width: 30%;
+    height: 6px;
+    width: 20%;
     background: black;
     display: inline-block;
-    transform: translateY(-10px);
+    transform: translateY(-8px);
     margin: 0px 5px 0px 5px;
 }
 
 #skillsetHeaderBefore::before{
     content: "";
-    height: 3px;
-    width: 30%;
+    height: 6px;
+    width: 20%;
     background: black;
     display: inline-block;
-    transform: translateY(-10px);
+    transform: translateY(-8px);
     margin: 0px 5px 0px 5px;
 }
 
@@ -362,6 +361,7 @@ button:hover
 
 .Tool #Tool{
     margin-bottom: 4rem;
+    margin-top: 10rem;
 }
 
 .Tool{
@@ -400,8 +400,33 @@ button:hover
 
 /*Contact*/
 .Contact{
-    margin-top: 5rem;
+    margin-top: 10rem;
     background-color: #FBFBFB;
+    font-family: "Roboto", sans-serif;
+}
+
+.Contact h1{
+    font-size: 30px;
+}
+
+#ContactHeaderAfter::after{
+    content: "";
+    height: 6px;
+    width: 20%;
+    background: black;
+    display: inline-block;
+    transform: translateY(-8px);
+    margin: 0px 5px 0px 5px;
+}
+
+#ContactHeaderBefore::before{
+    content: "";
+    height: 6px;
+    width: 20%;
+    background: black;
+    display: inline-block;
+    transform: translateY(-8px);
+    margin: 0px 5px 0px 5px;
 }
 
 #Linkedin{
@@ -424,6 +449,19 @@ button:hover
     margin: 1rem;
 }
 /*End Contact*/
+
+
+
+
+
+
+
+
+
+
+
+
+
 @media only screen and (max-width: 600px) {
     
     
