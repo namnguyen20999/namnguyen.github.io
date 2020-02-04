@@ -2,11 +2,12 @@
 @import url(./fonts.css);
 html {
     scroll-behavior: smooth;
+    background-image: url("/img/background_img.png");
 }
 /*Navigation*/
 body{
     font-family: "Roboto", sans-serif;
-    background-color: #F9F9F9;
+    background-image: url("/img/background_img.png");
 }
 
 .header_area .main-menu .fas.fa-briefcase.fa-2x{
@@ -401,7 +402,6 @@ button:hover
 /*Contact*/
 .Contact{
     margin-top: 10rem;
-    background-color: #FBFBFB;
     font-family: "Roboto", sans-serif;
 }
 
@@ -460,48 +460,46 @@ button:hover
 
 
 
-
-
 @media only screen and (max-width: 600px) {
     
     
-    /*Text title*/
+/*Text title*/
     .site-main .site-banner .col-lg-6.col-md-12 h3{
-        text-align: center;
+    text-align: center;
     }
     .site-main .site-banner .col-lg-6.col-md-12 h1{
-        text-align: center;
-        font-size: 25px;
-        font-weight: bolder;
+    text-align: center;
+    font-size: 25px;
+    font-weight: bolder;
     }
     .site-main .site-banner .col-lg-6.col-md-12 h4{
-        text-align: center;
+    text-align: center;
     }
     .site-main .site-banner .col-lg-6.col-md-12 .main-buttons .d-flex.flex-row #buttonResume{
-        margin: auto;
-        margin-top: 1rem;
+    margin: auto;
+    margin-top: 1rem;
     }
     
     
     /*Introduction*/
     
     /*Body*/
-    .header_area .main-menu .fas.fa-briefcase.fa-2x{
-        background: -webkit-linear-gradient(#614385,#516395);
-        padding: 0 1rem 0 1rem;
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        background-clip: text;
+.header_area .main-menu .fas.fa-briefcase.fa-2x{
+    background: -webkit-linear-gradient(#614385,#516395);
+    padding: 0 1rem 0 1rem;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
     }
-    .col-lg-6.col-md-12.banner .text-center img{
+.col-lg-6.col-md-12.banner .text-center img{
         margin-top: 3rem;
     }
-    .about-main .container-fluid .row h2{
-        font-size: 25px;
-        font-family: "Roboto", sans-serif;
-        text-align: center;
-        margin: auto;
-        margin-top: 2rem;
+.about-main .container-fluid .row h2{
+    font-size: 25px;
+    font-family: "Roboto", sans-serif;
+    text-align: center;
+    margin: auto;
+    margin-top: 2rem;
     }
 
     /* About Me*/
