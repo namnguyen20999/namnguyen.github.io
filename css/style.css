@@ -510,7 +510,7 @@ button:hover
     width: 25%;
     background: black;
     display: inline-block;
-    transform: translateY(-7px);
+    transform: translateY(-8px);
     margin: 0px 10px 0px 10px;
 }
 
@@ -597,4 +597,40 @@ button:hover
     font-weight: bolder;
 }
 
+#ContactHeaderAfter::after{
+    content: "";
+    height: 3px;
+    width: 10%;
+    background: black;
+    display: inline-block;
+    transform: translateY(-8px);
+    margin: 0px 5px 0px 5px;
+}
+
+#ContactHeaderBefore::before{
+    content: "";
+    height: 3px;
+    width: 10%;
+    background: black;
+    display: inline-block;
+    transform: translateY(-8px);
+    margin: 0px 5px 0px 5px;
+}
+
+.Contact #ContactHeader,
+.Contact #ContactHeaderBefore,
+.Contact #ContactHeaderAfter{
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+.Contact h1{
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+.Contact h5{
+    font-size: 15px;
+    font-weight: bolder;
+}
 }
